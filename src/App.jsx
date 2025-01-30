@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <h1 className="text-red-500 ">Hello</h1>
+      <Home />
+      <About />
     </>
   );
 };
