@@ -1,5 +1,4 @@
 import React from "react";
-import bgAbout from "../images/motion-background.jpg";
 
 const skillsList = [
   "Web design",
@@ -13,26 +12,21 @@ const description =
 
 const About = () => {
   return (
-    <div className="about-section relative">
-      {/* Background image with dark overlay */}
-      <img
-        src={bgAbout}
-        alt="About background"
-        className="absolute inset-0 w-full h-full object-cover opacity-60"
-      />
-      <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+    <div className="about-section relative bg-gradient-to-r from-gray-800 via-gray-900 to-black">
+      <div className="absolute inset-0 bg-black opacity-40"></div>
       {/* Black overlay */}
+
       {/* Content */}
       <div className="relative z-10 text-center py-16 px-8 sm:px-12 md:px-16">
-        <h2 className="text-4xl font-semibold text-white mb-6 drop-shadow-lg">
+        <h2 className="text-5xl font-semibold text-white mb-8 drop-shadow-lg">
           About Myself
         </h2>
-        <p className="text-lg text-white mb-8 max-w-3xl mx-auto drop-shadow-lg">
+        <p className="text-2xl text-gray-200 mb-10 max-w-3xl mx-auto drop-shadow-lg">
           {description}
         </p>
 
         {/* Skills list */}
-        <ul className="columns-2 text-left text-lg gap-6 mx-auto text-white max-w-2xl">
+        <ul className="columns-2 text-left text-xl gap-6 mx-auto text-gray-200 max-w-2xl">
           {skillsList.map((skill) => (
             <li
               key={skill}

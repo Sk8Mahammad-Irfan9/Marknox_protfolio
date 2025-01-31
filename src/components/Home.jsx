@@ -1,17 +1,15 @@
 import React from "react";
-import image from "../images/woman-with-tablet.jpg";
-import arrowSvg from "../images/down-arrow.svg";
 
-const Home = () => {
+const Home = ({ name, title }) => {
   return (
-    <div className="home relative">
-      <img src={image} alt="Altered image" className="w-full h-auto" />
-      <div className="absolute top-20 left-8 w-68">
-        <h1 className="text-4xl font-bold">HEllo</h1>
-        <h2 className="text-xl">HEllo</h2>
-      </div>
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-        <img src={arrowSvg} className="h-12 w-12" alt="Altered image" />
+    <div className="home relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 h-screen flex items-center justify-center">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      {/* Content */}
+      <div className="relative text-white z-10 text-center">
+        <h1 className="text-6xl font-bold text-gray-100 mb-4">{name}</h1>
+        <h2 className="text-2xl text-gray-300">{title}</h2>
       </div>
     </div>
   );
