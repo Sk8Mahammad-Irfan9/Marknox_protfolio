@@ -20,11 +20,13 @@ const siteProps = {
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio />
-      <Footer {...siteProps} />
+      <div>
+        <Navbar />
+        <Home name={siteProps.name} title={siteProps.title} />
+        <About />
+        <Portfolio />
+        <Footer {...siteProps} />
+      </div>
     </>
   );
 };

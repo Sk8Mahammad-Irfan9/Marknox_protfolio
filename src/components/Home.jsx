@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = ({ name, title }) => {
   return (
-    <div className="home relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 h-screen flex items-center justify-center">
+    <div id="home" className="home relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 h-screen flex items-center justify-center">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 

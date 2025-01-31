@@ -6,10 +6,11 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
-    <nav className="bg-gray-800 text-white p-4">
+    <nav className="bg-gray-800 text-white p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-xl font-bold">MyWebsite</div>
+        <div className="text-xl font-bold">My portfolio</div>
         <div className="hidden md:flex space-x-6">
           <a href="#home" className="hover:text-gray-400">
             Home
@@ -17,8 +18,8 @@ const Navbar = () => {
           <a href="#about" className="hover:text-gray-400">
             About
           </a>
-          <a href="#services" className="hover:text-gray-400">
-            Services
+          <a href="#portfolio" className="hover:text-gray-400">
+            Portfolio
           </a>
           <a href="#contact" className="hover:text-gray-400">
             Contact

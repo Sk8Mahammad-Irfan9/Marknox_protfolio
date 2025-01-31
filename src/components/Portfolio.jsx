@@ -45,7 +45,7 @@ const myProjects = [
 
 const Portfolio = () => {
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 min-h-screen p-8">
+    <div id="portfolio" className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 min-h-screen p-8">
       <h1 className="text-4xl font-semibold text-white text-center mb-12">
         My Portfolio
       </h1>

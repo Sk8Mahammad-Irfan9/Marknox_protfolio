@@ -12,7 +12,7 @@ const description =
 
 const About = () => {
   return (
-    <div className="about-section relative bg-gradient-to-r from-gray-800 via-gray-900 to-black">
+    <div id="about" className="about-section relative bg-gradient-to-r from-gray-800 via-gray-900 to-black">
       <div className="absolute inset-0 bg-black opacity-40"></div>
       {/* Black overlay */}
 
